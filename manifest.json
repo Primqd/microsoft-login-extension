@@ -15,7 +15,8 @@
                 "scripts/login.js"
             ],
             "matches": [
-                "https://msftguest.microsoft.com/guest/msft_a_guest_register_login.php?_browser=1"
+                "https://msftguest.microsoft.com/guest/msft_a_guest_register_login.php?_browser=1",
+                "https://msftguest.microsoft.com/guest/msft_a_guest_register_login.php"
             ]
         },
         {
@@ -23,7 +24,8 @@
                 "scripts/reciept.js"
             ],
             "matches": [
-                "https://msftguest.microsoft.com/guest/msft_a_guest_register_receipt.php?refresh=1"
+                "https://msftguest.microsoft.com/guest/msft_a_guest_register_receipt.php?refresh=1",
+                "https://msftguest.microsoft.com/guest/msft_a_guest_register_receipt.php"
             ]
         }
     ],
