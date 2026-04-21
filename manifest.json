@@ -1,10 +1,27 @@
 {
-    "name": "Hello Extensions",
-    "description": "blah",
+    "name": "Microsoft Internet Login",
+    "description": "Automatically logs into the Microsoft Internet Portal",
     "version": "1.0",
     "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
-        "default_popup": "hello.html",
-        "default_icon": "hello_extensions.png"
-    }
+        "default_popup": "main.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/login.js"
+            ],
+            "matches": [
+                "https://msftguest.microsoft.com/guest/msft_a_guest_register_login.php?_browser=1"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ]
 }
