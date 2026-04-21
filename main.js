@@ -30,3 +30,8 @@ passwordBox.addEventListener("input", async (event) => {
         passwordLabel.textContent = `Password (Currently ${data.ms_internet_password})`
     });
 });
+
+// expire time
+chrome.storage.local.get("ms_internet_expire_time").then((data) => {
+    document.getElementById("expire-time").textContent = `Expires at ${data.ms_internet_expire_time}`;
+});
